@@ -1,4 +1,5 @@
-import Quiz from "../../client/src/components/Quiz"
+import Quiz from "../../client/src/components/Quiz.tsx"
+import React from "react";
 
 describe('Quiz Component', () => {
   beforeEach(() => {
