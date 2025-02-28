@@ -3,6 +3,8 @@ name: Deploy
 
 #TODO: What is this block of code doing
 on:
+    push:
+      branches: [main]
     pull_request:
       branches:
         - main
@@ -20,3 +22,4 @@ jobs:
             DEPLOY_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
           run: |
             curl "$DEPLOY_URL"
+   
