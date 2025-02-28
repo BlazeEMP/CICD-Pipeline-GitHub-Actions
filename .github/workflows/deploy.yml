@@ -3,8 +3,6 @@ name: Deploy
 
 #TODO: What is this block of code doing
 on:
-    push:
-      branches: [main]
     pull_request:
       branches:
         - main
@@ -19,6 +17,9 @@ jobs:
         - name: Test
           run: |
             npm install
+            npm run build
+            npm run start
+            npm run test-component
             npm run test
 
         - name: Deploy

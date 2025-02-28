@@ -1,4 +1,5 @@
-import { useState, } from 'react';
+import { useState } from 'react';
+import React from 'react';
 import type { Question } from '../models/Question.js';
 import { getQuestions } from '../services/questionApi.js';
 
