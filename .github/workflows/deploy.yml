@@ -3,8 +3,6 @@ name: Deploy
 
 #TODO: What is this block of code doing
 on:
-    push:
-      branches: [main]
     pull_request:
       branches:
         - main
