@@ -9,6 +9,7 @@
     "seed": "node dist/seeds/seed.js",
     "start": "node dist/server.js",
     "watch": "nodemon dist/server.js",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "test": "vitest"
   },
   "keywords": [],
